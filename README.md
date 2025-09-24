@@ -11,7 +11,7 @@ Pour les adresses suivantes indiquez:
 
 ---> **192.168.1.1** : C / réseau : 192.168.1 hôte : 1 / privée
 
----> **172.16.254.1** : B / réseau : 172.16 hôte : 254.1 / privée
+---> **172.16.254.1** : <mark>B</mark> / réseau : 172.16 hôte : 254.1 / privée
 
 ---> **10.0.0.1** : A / réseau : 10 hôte : 0.0.1 / privée
 
