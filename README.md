@@ -13,6 +13,7 @@ Configurer un réseau dans Packet Tracer qui contient
    ![Figure 6 – Ping](img/figure6.png)
 5.	Libérez l’adresse reçue.
 6.	Redemandez un bail.
+	![Figure 7 – release/renew](img/figure7.png)
 
 
 ## section 2
