@@ -23,7 +23,7 @@ Pour les adresses suivantes indiquez:
 | 172.16.254.1    | B      | 172.16        | 254.1       | Privée          |
 | 10.0.0.1        | A      | 10            | 0.0.1       | Privée          |
 | 203.0.113.45    | C      | 203.0.113     | 45          | Publique        |
-| 169.254.123.78  | B      | 169.254       | 123.78      | Publique
+| 169.254.123.78  | B      | 169.254       | 123.78      | Privée (APIPA)  |
 | 8.8.8.8         | A      | 8             | 8.8.8       | Publique        |
 
 
