@@ -35,7 +35,7 @@ Pour les adresses suivantes indiquez:
 3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.
     - 197.2.0.0 : Classe C, masque 255.255.255.0/24
     - 2^<mark>3</mark> = 8 (sous réseaux)
-    - masque décimal pointé : 24 + 3 = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.224
+    - masque décimal pointé : 24 + <mark>3</mark> = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.<mark>224</mark>
     - Notation CIDR : 27 bits à 1 --­> /27
     - Incrémentation : 256 - 224 = 32
       
