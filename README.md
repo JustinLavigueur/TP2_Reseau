@@ -2,6 +2,14 @@
 Travail pratique numéro 2 pour le cours de Réseau
 
 ## section 1
+Configurer un réseau dans Packet Tracer qui contient
+    - Un Home router
+    - Deux PC's
+    
+1.	Configurez la carte réseau d'un des poste de travail afin qu’elle reçoive une adresse dynamique.
+2.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire vérifiez que vous avez reçu une adresse IP.
+3.	Libérez l’adresse reçue.
+4.	Redemandez un bail.
 
 
 ## section 2
