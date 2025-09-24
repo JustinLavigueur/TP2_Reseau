@@ -7,9 +7,12 @@ Configurer un réseau dans Packet Tracer qui contient
     - Deux PC's
     
 1.	Configurez la carte réseau d'un des poste de travail afin qu’elle reçoive une adresse dynamique.
-2.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire vérifiez que vous avez reçu une adresse IP.
-3.	Libérez l’adresse reçue.
-4.	Redemandez un bail.
+	![Figure 1 – DHCP](img/figure1.png)
+    ![Figure 5 – DHCP](img/figure5.png)
+3.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire vérifiez que vous avez reçu une adresse IP.
+   ![Figure 6 – Ping](img/figure6.png)
+5.	Libérez l’adresse reçue.
+6.	Redemandez un bail.
 
 
 ## section 2
