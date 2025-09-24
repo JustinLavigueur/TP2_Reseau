@@ -52,6 +52,17 @@ Pour les adresses suivantes indiquez:
     Sous réseau 8 : **197.2.0.224/27**
 
 
+## Question 3
+
+Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
+
+L'adresse réseau est 192.168.75.0/27
+L'adresse de diffusion est 192.168.75.31/27
+Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
+5 bits fait 32, il y a 32 donc adresses au total, 
+mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), ce qui laisse 30 adresses utilisables pour les hôtes.
+
+
 
 
 
