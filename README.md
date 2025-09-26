@@ -26,6 +26,16 @@ Configurer un réseau dans Packet Tracer qui contient
 
 
 ## Question 0
+1.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP statique.
+    -
+2.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP dynamique.
+    -
+3.	Vrai ou Faux : chaque hôte du réseau doit posséder une adresse IP unique.
+    - Vrai
+4.	Quelle est la différence entre une adresse MAC et une adresse IP ?
+    - Une adresse MAC c’est l’adresse physique de la carte réseau d’un appareil, chaque appareil on leur propre adresse MAC unique et ne change pas. Une adresse IP est une adresse attribuée à un appareil 		      lorsqu’il est connecté à un réseau, contrairement à une adresse MAC, l’adresse IP peut changer selon le réseau. 
+5.	Quel est le rôle du service DHCP sur un réseau ?
+    - Le rôle du service DHCP est d’attribuer automatiquement des adresse IP aux appareils sur un réseau.
 
 
 ## Question 1
