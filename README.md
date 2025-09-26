@@ -20,7 +20,8 @@ Configurer un réseau dans Packet Tracer qui contient
 ## section 2
 1.	Désactivez le service DHCP et vérifiez que vous ne recevez plus d’adresse IP.
 2.	Quelle est maintenant l’adresse IP du poste de travail ? Pourquoi ?
-   	- Adresse IP : 169.254.24.105, car le pc ne trouve plus le server DHCP et donc une adresse APIPA lui est attribué
+   	- Adresse IP : 169.254.24.105, car le pc ne trouve plus le server DHCP et donc une adresse APIPA lui est attribuée.
+      
 ![Figure 13 – APIPA](img/Figure13.png)  
 
 
