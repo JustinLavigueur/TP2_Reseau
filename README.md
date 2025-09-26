@@ -94,8 +94,8 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 
 ## 1. Réseau principal
  
-📸 *Capture : Vue du VCN*  
-![[Capture d’écran 2025-09-26 115311.png]]
+ 
+![Figure 8 – RESEAU](img/figure8.png)
 - Réseau racine : `192.168.10.0/24`  
 
 ---
@@ -104,7 +104,7 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 Le /24 divisé en 3 sous-réseaux :  
 
 📸 *Capture : Vue des Subnets*  
-![[Capture d’écran 2025-09-26 120412.png]]
+![Figure 9 – sub](img/figure9.png)
 
 | Sous-réseau | CIDR              | Taille      | Nb hôtes utilisables | Adresse réseau | Adresse broadcast | Type   |
 | ----------- | ----------------- | ----------- | -------------------- | -------------- | ----------------- | ------ |
@@ -118,7 +118,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ### 🔹 Web (HTTPS)
 📸 *Capture : Règles Web-list*  
-![Web Rules](Capture%20d’écran%202025-09-26%20115124.png)
+![Figure 10 – HTTPS](img/figure10.png)
 
 - TCP **443** : https  
 
@@ -126,14 +126,14 @@ Le /24 divisé en 3 sous-réseaux :
 
 ### 🔹 FTP
 📸 *Capture : Règles FTP-list*  
-![[Pasted image 20250926120946.png]]
+![Figure 11 – FTP](img/figure11.png)
 
 - TCP **21** : contrôle FTP  
 ---
 
 ### 🔹 DHCP
 📸 *Capture : Règles DHCP-list*  
-![[Pasted image 20250926121058.png]]
+![Figure 12 – DHCP](img/figure12.png)
 
 - UDP **67-68** : DHCP
 
