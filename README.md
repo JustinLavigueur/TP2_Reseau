@@ -6,13 +6,13 @@ Configurer un réseau dans Packet Tracer qui contient
     - Un Home router
     - Deux PC's
     
-1.	Configurez la carte réseau d'un des poste de travail afin qu’elle reçoive une adresse dynamique.
+1.	On configure la carte réseau d'un des poste de travail pour qu’elle reçoive une adresse dynamique.
 	![Figure 1 – DHCP](img/figure1.png)
     ![Figure 5 – DHCP](img/figure5.png)
-3.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire vérifiez que vous avez reçu une adresse IP.
+3.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire, on vérifie qu'on a reçu une adresse IP.
    ![Figure 6 – Ping](img/figure6.png)
-5.	Libérez l’adresse reçue.
-6.	Redemandez un bail.
+5.	On libére par la suite l’adresse reçue.
+6.	On redemande un bail pour vérifier si tout est en ordre.
    
 ![Figure 7 – release/renew](img/figure7.png)
 
@@ -26,7 +26,7 @@ Configurer un réseau dans Packet Tracer qui contient
 ## Question 1
 Pour les adresses suivantes indiquez:
 
-1. leur classe;
+1. Leur classe;
 2. la partie réseau et la partie hôte;
 3. si ce sont des adresses privées ou publiques.
 
@@ -42,13 +42,13 @@ Pour les adresses suivantes indiquez:
 
 ## Question 2 
 1.	Définir l’adresse de diffusion « broadcast ».
-    - L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes.
+    - L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. En sorte, elle envoie son signal un peu partout.
 2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?
     - Pour déterminer l’adresse réseau, on fait une opération ET Logique en binaire entre le masque et l’adresse IP.  
 3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.
     - 197.2.0.0 : Classe C, masque 255.255.255.0/24
     - 2^<mark>3</mark> = 8 (sous réseaux)
-    - masque décimal pointé : 24 + <mark>3</mark> = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.<mark>224</mark>
+    - Masque décimal pointé : 24 + <mark>3</mark> = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.<mark>224</mark>
     - Notation CIDR : 27 bits à 1 --­> /27
     - Incrémentation : 256 - 224 = 32
       
@@ -66,14 +66,27 @@ Pour les adresses suivantes indiquez:
 
 
 ## Question 3
-
 Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 
-L'adresse réseau est 192.168.75.0/27
-L'adresse de diffusion est 192.168.75.31/27
-Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
-5 bits fait 32, il y a 32 donc adresses au total, 
-mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), ce qui laisse 30 adresses utilisables pour les hôtes.
+1. L'adresse réseau est 192.168.75.0/27.
+   ==Pour le trouver, nous avons fait le calcul de la manière suivante:==
+   -Tout d'abord, nous avons converti l'adresse ip 192.168.75.50/27 en binaire, ce qui donne exactement : ==11000000.10101000.01001011.00110010==
+   -Par la suite, nous devons comprendre le masque de sous-réseau qui est 27 en décimal, donc il faut mettre les 27 bits sur 32 à 1, donc : ==11111111.11111111.11111111.11100000== (27 bits à 1 et 5 bits à 0).
+   -Maintenant, on doit faire un ET logique entre l'adresse ip ==11000000.10101000.01001011.00110010== et le masque de sous-réseau en binaire ==11111111.11111111.11111111.11100000==, ce qui égale 11000000.10101000.01001011.00100000 (ce 	qui correspond à 192.168.75.32).
+   
+2. L'adresse de diffusion est 192.168.75.63/27
+   ==Pour l'adresse de diffusion, nous allons suivre un processus similaire :==
+
+	-Tout d'abord, nous partons de l'adresse réseau 192.168.75.32 que nous avons trouvée précédemment.
+	-En binaire, l'adresse réseau est : 11000000.10101000.01001011.00100000.
+	-Le masque de sous-réseau reste le même : 11111111.11111111.11111111.11100000.
+	-Pour obtenir l'adresse de diffusion, nous devons mettre les 5 bits d'hôte à 1. Cela signifie que nous allons remplacer les 5 derniers bits de l'adresse réseau par des 1.
+	-En effectuant cette opération, nous obtenons : 11000000.10101000.01001011.00111111.
+	-En décimal, cela correspond à 192.168.75.63.
+   
+4. Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
+5 bits fait 32, il y a 32 donc adresses au total, mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), ce qui laisse 30 adresses utilisables pour les hôtes.
+
 
 
 
