@@ -155,7 +155,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ---
 
-## 5. Justification des choix
+## 5. Justification taile sous-réseaux
 
 - Pour obtenir **au moins 3 sous-réseaux**, il faut emprunter **2 bits** (`/24` à `/26`), car 2^n ≥ 3 → **n = 4**.
     
