@@ -87,6 +87,81 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 4. Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
 5 bits fait 32, il y a 32 donc adresses au total, mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), ce qui laisse 30 adresses utilisables pour les hôtes.
 
+## Question 4
+
+
+## Question 5
+
+## 1. Réseau principal
+ 
+📸 *Capture : Vue du VCN*  
+![[Capture d’écran 2025-09-26 115311.png]]
+- Réseau racine : `192.168.10.0/24`  
+
+---
+
+## 3. Subnetting et découpage
+Le /24 divisé en 3 sous-réseaux :  
+
+📸 *Capture : Vue des Subnets*  
+![[Capture d’écran 2025-09-26 120412.png]]
+
+| Sous-réseau | CIDR              | Taille      | Nb hôtes utilisables | Adresse réseau | Adresse broadcast | Type   |
+| ----------- | ----------------- | ----------- | -------------------- | -------------- | ----------------- | ------ |
+| **Web**     | 192.168.10.0/26   | 64 adresses | 62                   | 192.168.10.0   | 192.168.10.63     | Public |
+| **FTP**     | 192.168.10.128/26 | 64 adresses | 62                   | 192.168.10.128 | 192.168.10.191    | Privé  |
+| **DHCP**    | 192.168.10.192/26 | 64 adresses | 62                   | 192.168.10.192 | 192.168.10.255    | Privé  |
+
+---
+
+## 4. Règles de sécurité (Ingress Rules)
+
+### 🔹 Web (HTTPS)
+📸 *Capture : Règles Web-list*  
+![Web Rules](Capture%20d’écran%202025-09-26%20115124.png)
+
+- TCP **443** : https  
+
+---
+
+### 🔹 FTP
+📸 *Capture : Règles FTP-list*  
+![[Pasted image 20250926120946.png]]
+
+- TCP **21** : contrôle FTP  
+---
+
+### 🔹 DHCP
+📸 *Capture : Règles DHCP-list*  
+![[Pasted image 20250926121058.png]]
+
+- UDP **67-68** : DHCP
+
+
+---
+
+## 5. Justification des choix
+
+- Pour obtenir **au moins 3 sous-réseaux**, il faut emprunter **2 bits** (`/24` à `/26`), car 2^n ≥ 3 → **n = 4**.
+    
+- Ça donne **4 sous-réseaux possible** (besoin de 3 sous-réseaux).
+
+En `/26`
+
+- Masque  : `255.255.255.192`
+    
+- le dernier octet (192) est :
+    
+    `11000000`
+    
+    → 6 bits à 0.
+    
+- Nombre d’adresses par sous-réseau = `2^6 = 64`
+    
+    - Incrémentation de 64
+
+Le sous-réseau 192.168.10.64/26 est libre
+
 
 
 
