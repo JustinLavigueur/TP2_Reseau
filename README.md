@@ -95,7 +95,7 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 ## 1. Réseau principal
  
  
-![Figure 8 – RESEAU](img/figure8.png)
+![Figure 8 – RESEAU](img/Figure8.png)
 - Réseau racine : `192.168.10.0/24`  
 
 ---
@@ -104,7 +104,7 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 Le /24 divisé en 3 sous-réseaux :  
 
 
-![Figure 9 – sub](img/figure9.png)
+![Figure 9 – sub](img/Figure9.png)
 
 | Sous-réseau | CIDR              | Taille      | Nb hôtes utilisables | Adresse réseau | Adresse broadcast | Type   |
 | ----------- | ----------------- | ----------- | -------------------- | -------------- | ----------------- | ------ |
@@ -118,7 +118,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ### 🔹 Web (HTTPS)
 
-![Figure 10 – HTTPS](img/figure10.png)
+![Figure 10 – HTTPS](img/Figure10.png)
 
 - TCP **443** : https  
 
@@ -126,14 +126,14 @@ Le /24 divisé en 3 sous-réseaux :
 
 ### 🔹 FTP
 
-![Figure 11 – FTP](img/figure11.png)
+![Figure 11 – FTP](img/Figure11.png)
 
 - TCP **21** : contrôle FTP  
 ---
 
 ### 🔹 DHCP
  
-![Figure 12 – DHCP](img/figure12.png)
+![Figure 12 – DHCP](img/Figure12.png)
 
 - UDP **67-68** : DHCP
 
