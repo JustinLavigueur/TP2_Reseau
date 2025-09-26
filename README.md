@@ -103,7 +103,7 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 ## 3. Subnetting et découpage
 Le /24 divisé en 3 sous-réseaux :  
 
-📸 *Capture : Vue des Subnets*  
+
 ![Figure 9 – sub](img/figure9.png)
 
 | Sous-réseau | CIDR              | Taille      | Nb hôtes utilisables | Adresse réseau | Adresse broadcast | Type   |
@@ -117,7 +117,7 @@ Le /24 divisé en 3 sous-réseaux :
 ## 4. Règles de sécurité (Ingress Rules)
 
 ### 🔹 Web (HTTPS)
-📸 *Capture : Règles Web-list*  
+
 ![Figure 10 – HTTPS](img/figure10.png)
 
 - TCP **443** : https  
@@ -125,14 +125,14 @@ Le /24 divisé en 3 sous-réseaux :
 ---
 
 ### 🔹 FTP
-📸 *Capture : Règles FTP-list*  
+
 ![Figure 11 – FTP](img/figure11.png)
 
 - TCP **21** : contrôle FTP  
 ---
 
 ### 🔹 DHCP
-📸 *Capture : Règles DHCP-list*  
+ 
 ![Figure 12 – DHCP](img/figure12.png)
 
 - UDP **67-68** : DHCP
