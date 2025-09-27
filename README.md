@@ -105,6 +105,24 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 ## Question 4
 
 ![image 1 – Machine VM Ubuntu](img/image1.png)  
+![image 2 – ](img/image2.png)  
+![image 3 – ](img/image3.png)  
+![image 4 – ](img/image4.png)  
+![image 5 – ](img/image5.png)  
+![image 6 – ](img/image6.png)  
+![image 7 – ](img/image7.png)  
+![image 8 – ](img/image8.png)  
+![image 9 – ](img/image9.png)
+![image 10 – ](img/image10.png)  
+![image 11 – ](img/image11.png)  
+![image 12 – ](img/image12.png)  
+![image 13 – ](img/image13.png)
+![image 14 – ](img/image14.png)  
+![image 15 – ](img/image15.png)  
+![image 16 – ](img/image16.png)  
+![image 17 – ](img/image17.png)  
+![image 18 – ](img/image18.png)  
+![image 19 – ](img/image19.png)  
 
 
 ## Question 5
