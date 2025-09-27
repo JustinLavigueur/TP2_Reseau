@@ -104,15 +104,28 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 
 ## Question 4
 
+Créez un guide détaillé destiné à vos collègues pour les assister dans
+l'installation du logiciel GLPI sur un ordinateur soit sur Azure cloud ou sur Oracle cloud. Ce
+manuel devra intégrer des captures d'écran pertinentes
+afin d'illustrer clairement chaque étape du processus d'installation.
+Expliquez à la fois la partie configuration de GLPI et la configuration de la VM sur votre service
+choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaDB.
+
+---> Sur cette image, dans ma nouvelle machine virtuelle nommée InstanceGLPI, j'installe Apache 2, MariaDB Server, PHP et ses extensions respectives avec sudo (puique apt est administrateur).
 ![image 1 – Machine VM Ubuntu](img/image1.png)  
-![image 2 – ](img/image2.png)  
+---> Par la suite, je sécure l'installation MariaDB.
 ![image 3 – ](img/image3.png)  
-![image 4 – ](img/image4.png)  
+---> Je rentre le nouveau mot de passe de l'utilisateur root (l'utilisateur créé par défaut lors de l'utilisation)
+![image 4 – ](img/image4.png) 
+--->Je fais les recommendations minimales 
 ![image 5 – ](img/image5.png)  
-![image 6 – ](img/image6.png)  
+--->J'ai créé ici un utilisateur et une base de données dédiés à GLPI
 ![image 7 – ](img/image7.png)  
-![image 8 – ](img/image8.png)  
+---> Je vérifie par la suite si ma base de données glpi était bien créée
+![image 8 – ](img/image8.png) 
+---> Je télécharge la version *.tgz la plus récente de GLPI et je l'ai stocké dans le dossier racine principal d'Apache
 ![image 9 – ](img/image9.png)
+---> je l'ai ensuite 
 ![image 10 – ](img/image10.png)  
 ![image 11 – ](img/image11.png)  
 ![image 12 – ](img/image12.png)  
