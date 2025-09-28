@@ -115,25 +115,28 @@ choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaD
 ![image 1 – Machine VM Ubuntu](img/image1.png)  
 ---> Par la suite, je sécure l'installation MariaDB.
 ![image 3 – ](img/image3.png)  
----> Je rentre le nouveau mot de passe de l'utilisateur root (l'utilisateur créé par défaut lors de l'utilisation)
+---> Je rentre le nouveau mot de passe de l'utilisateur root (l'utilisateur créé par défaut lors de l'utilisation).
 ![image 4 – ](img/image4.png) 
---->Je fais les recommendations minimales 
+--->Je fais les recommendations minimales. 
 ![image 5 – ](img/image5.png)  
---->J'ai créé ici un utilisateur et une base de données dédiés à GLPI
+---> J'ai créé ici un utilisateur et une base de données dédiés à GLPI.
 ![image 7 – ](img/image7.png)  
----> Je vérifie par la suite si ma base de données glpi était bien créée
+---> Je vérifie par la suite si ma base de données glpi était bien créée.
 ![image 8 – ](img/image8.png) 
 ---> Je télécharge la version *.tgz la plus récente de GLPI et je l'ai stocké dans le dossier racine principal d'Apache
 ![image 9 – ](img/image9.png)
----> je l'ai ensuite 
+---> Je l'ai ensuite release pour avoir acces au dossier téléchargé.
 ![image 10 – ](img/image10.png)  
-![image 11 – ](img/image11.png)  
+---> J'ai réparti les fichiers du dossier pour s'assurer que GLPI retrouve ses fichiers.
+![image 11 – ](img/image11.png)
+---> J'ai créé le fichier Downstream.php et vérifié s'il existait pour de vrai.
 ![image 12 – ](img/image12.png)  
-![image 13 – ](img/image13.png)
+---> J<ai mis le contenu demandé dedans.
 ![image 14 – ](img/image14.png)  
+---> J'ai créé le fichier local_define.php.
 ![image 15 – ](img/image15.png)  
 ![image 16 – ](img/image16.png)  
-![image 17 – ](img/image17.png)  
+---> J'ai configuré le serveur web.
 ![image 18 – ](img/image18.png)  
 ![image 19 – ](img/image19.png)  
 
