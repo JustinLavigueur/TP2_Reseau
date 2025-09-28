@@ -2,11 +2,11 @@
 Travail pratique numéro 2 pour le cours de Réseau
 
 ## section 1
-Configurer un réseau dans Packet Tracer qui contient
+**Configurer un réseau dans Packet Tracer qui contient
     - Un Home router
-    - Deux PC's
+    - Deux PC's**
     
-1.	On configure la carte réseau d'un des poste de travail pour qu’elle reçoive une adresse dynamique.
+1.	On configure la carte réseau d'un des postes de travail pour qu’elle reçoive une adresse dynamique.
 	![Figure 1 – DHCP](img/figure1.png)
     ![Figure 5 – DHCP](img/figure5.png)
 3.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire, on vérifie qu'on a reçu une adresse IP.
@@ -18,28 +18,28 @@ Configurer un réseau dans Packet Tracer qui contient
 
 
 ## section 2
-1.	Désactivez le service DHCP et vérifiez que vous ne recevez plus d’adresse IP.
-2.	Quelle est maintenant l’adresse IP du poste de travail ? Pourquoi ?
-   	- Adresse IP : 169.254.24.105, car le pc ne trouve plus le server DHCP et donc une adresse APIPA lui est attribuée.
+**1.	Désactivez le service DHCP et vérifiez que vous ne recevez plus d’adresse IP.
+2.	Quelle est maintenant l’adresse IP du poste de travail ? Pourquoi ?**
+   	- Adresse IP : 169.254.24.105, car le pc ne trouve plus le server DHCP et donc une adresse APIPA lui est attribuée pour l'instant.
       
 ![Figure 13 – APIPA](img/Figure13.png)  
 
 
 ## Question 0
-1.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP statique.
+**1.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP statique.**
     -
-2.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP dynamique.
+**2.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP dynamique.**
     -
-3.	Vrai ou Faux : chaque hôte du réseau doit posséder une adresse IP unique.
+**3.	Vrai ou Faux : chaque hôte du réseau doit posséder une adresse IP unique.**
     - Vrai
-4.	Quelle est la différence entre une adresse MAC et une adresse IP ?
-    - Une adresse MAC c’est l’adresse physique de la carte réseau d’un appareil, chaque appareil on leur propre adresse MAC unique et ne change pas. Une adresse IP est une adresse attribuée à un appareil 		      lorsqu’il est connecté à un réseau, contrairement à une adresse MAC, l’adresse IP peut changer selon le réseau. 
-5.	Quel est le rôle du service DHCP sur un réseau ?
-    - Le rôle du service DHCP est d’attribuer automatiquement des adresse IP aux appareils sur un réseau.
+**4.	Quelle est la différence entre une adresse MAC et une adresse IP ?**
+    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas. Parcontre, une adresse IP est une adresse attribuée à un appareil 		      lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
+**5.	Quel est le rôle du service DHCP sur un réseau ?**
+    - Le rôle du service DHCP est d’attribuer automatiquement des adresses IP aux appareils sur un réseau informatique.
 
 
 ## Question 1
-Pour les adresses suivantes indiquez:
+**Pour les adresses suivantes indiquez:**
 
 1. Leur classe;
 2. la partie réseau et la partie hôte;
@@ -56,11 +56,11 @@ Pour les adresses suivantes indiquez:
 
 
 ## Question 2 
-1.	Définir l’adresse de diffusion « broadcast ».
+**1.	Définir l’adresse de diffusion « broadcast ».**
     - L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. En sorte, elle envoie son signal un peu partout.
-2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?
+**2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?**
     - Pour déterminer l’adresse réseau, on fait une opération ET Logique en binaire entre le masque et l’adresse IP.  
-3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.
+**3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.**
     - 197.2.0.0 : Classe C, masque 255.255.255.0/24
     - 2^<mark>3</mark> = 8 (sous réseaux)
     - Masque décimal pointé : 24 + <mark>3</mark> = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.<mark>224</mark>
@@ -81,7 +81,7 @@ Pour les adresses suivantes indiquez:
 
 
 ## Question 3
-Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
+**Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.**
 
 1. L'adresse réseau est 192.168.75.0/27.
    <mark>Pour le trouver, nous avons fait le calcul de la manière suivante:</mark>
@@ -97,19 +97,19 @@ Soit l'adresse IP suivante avec sa notation CIDR : 192.168.75.50/27.
 	-Le masque de sous-réseau reste le même : <mark>11111111.11111111.11111111.11100000</mark>.
 	-Pour obtenir l'adresse de diffusion, nous devons mettre les 5 bits d'hôte à 1. Cela signifie que nous allons remplacer les 5 derniers bits de l'adresse réseau par des 1.
 	-En effectuant cette opération, nous obtenons : <mark>11000000.10101000.01001011.00111111</mark>.
-	-En décimal, cela correspond à 192.168.75.63/27
+	-En décimal, cela correspond à **192.168.75.63/27**
    
 4. Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
 5 bits fait 32, il y a 32 donc adresses au total, mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), ce qui laisse 30 adresses utilisables pour les hôtes.
 
 ## Question 4
 
-Créez un guide détaillé destiné à vos collègues pour les assister dans
+**Créez un guide détaillé destiné à vos collègues pour les assister dans
 l'installation du logiciel GLPI sur un ordinateur soit sur Azure cloud ou sur Oracle cloud. Ce
 manuel devra intégrer des captures d'écran pertinentes
 afin d'illustrer clairement chaque étape du processus d'installation.
 Expliquez à la fois la partie configuration de GLPI et la configuration de la VM sur votre service
-choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaDB.
+choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaDB.**
 
 ---> Sur cette image, dans ma nouvelle machine virtuelle nommée InstanceGLPI, j'installe Apache 2, MariaDB Server, PHP et ses extensions respectives avec sudo (puique apt est administrateur).
 ![image 1 – Machine VM Ubuntu](img/image1.png)  
@@ -119,7 +119,7 @@ choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaD
 ![image 4 – ](img/image4.png) 
 --->Je fais les recommendations minimales. 
 ![image 5 – ](img/image5.png)  
----> J'ai créé ici un utilisateur et une base de données dédiés à GLPI.
+---> J'ai créé ici un utilisateur et une base de données dédiés à **GLPI**.
 ![image 7 – ](img/image7.png)  
 ---> Je vérifie par la suite si ma base de données glpi était bien créée.
 ![image 8 – ](img/image8.png) 
@@ -191,7 +191,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ---
 
-## 5. Justification taile sous-réseaux
+## 5. Justification des tailles de sous-réseaux
 
 - Pour obtenir **au moins 3 sous-réseaux**, il faut emprunter **2 bits** (`/24` à `/26`), car 2^n ≥ 3 → **n = 4**.
     
