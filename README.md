@@ -33,7 +33,7 @@
 **3.	Vrai ou Faux : chaque hôte du réseau doit posséder une adresse IP unique.**
     - Vrai
 **4.	Quelle est la différence entre une adresse MAC et une adresse IP ?**
-    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas. Parcontre, une adresse IP est une adresse attribuée à un appareil 		      lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
+    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas. Parcontre, une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
 **5.	Quel est le rôle du service DHCP sur un réseau ?**
     - Le rôle du service DHCP est d’attribuer automatiquement des adresses IP aux appareils sur un réseau informatique.
 
