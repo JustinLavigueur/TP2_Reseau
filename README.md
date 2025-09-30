@@ -63,7 +63,7 @@ Configurer un réseau dans Packet Tracer qui contient
 
 ## Question 2 
 1.	Définir l’adresse de diffusion « broadcast ».
-	- L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. En sorte, elle envoie son signal un peu partout.
+	- L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. 
 2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?
     - Pour déterminer l’adresse réseau, on fait une opération ET Logique en binaire entre le masque et l’adresse IP.  
 3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.
