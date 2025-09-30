@@ -25,17 +25,23 @@
 ![Figure 13 – APIPA](img/Figure13.png)  
 
 
-## Question 0
-**1.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP statique.**
-    -
-**2.	Donnez un exemple pour lequel un hôte devrait posséder une adresse IP dynamique.**
-    -
-**3.	Vrai ou Faux : chaque hôte du réseau doit posséder une adresse IP unique.**
-    - Vrai
-**4.	Quelle est la différence entre une adresse MAC et une adresse IP ?**
-    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas. Parcontre, une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
-**5.	Quel est le rôle du service DHCP sur un réseau ?**
-    - Le rôle du service DHCP est d’attribuer automatiquement des adresses IP aux appareils sur un réseau informatique.
+## Question 0 
+
+1. Exemple d’hôte devant posséder une **adresse IP statique** :  
+   - …  
+
+2. Exemple d’hôte devant posséder une **adresse IP dynamique** :  
+   - …  
+
+3. **Vrai ou Faux :** chaque hôte du réseau doit posséder une adresse IP unique.  
+   -  **Vrai**  
+
+4. Différence entre **adresse MAC** et **adresse IP** :  
+   - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas.
+   - Une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
+
+2. Rôle du service **DHCP** :  
+   - Attribuer automatiquement des adresses IP aux appareils d’un réseau.  
 
 
 ## Question 1
