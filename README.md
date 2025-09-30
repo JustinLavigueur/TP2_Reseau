@@ -1,8 +1,8 @@
 # TP2_Reseau
 ### Travail pratique numéro 2 pour le cours de Réseau
-**Auteurs :**  
-	- Alexandre Sweeney-Lantin
-	- Justin Lavigueur
+**Auteurs :** 
+- Alexandre Sweeney-Lantin
+- Justin Lavigueur
 
 ## section 1
 Configurer un réseau dans Packet Tracer qui contient
