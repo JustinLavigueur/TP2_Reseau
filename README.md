@@ -28,10 +28,10 @@
 ## Question 0 
 
 1. Exemple d’hôte devant posséder une **adresse IP statique** :  
-   - …  
+   - Une imprimante
 
 2. Exemple d’hôte devant posséder une **adresse IP dynamique** :  
-   - …  
+   - Un poste de travail dans une grande entreprise (DHCP qui évite les conflit d'adressage IP) 
 
 3. **Vrai ou Faux :** chaque hôte du réseau doit posséder une adresse IP unique.  
    -  **Vrai**  
