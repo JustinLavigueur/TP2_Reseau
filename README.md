@@ -62,11 +62,11 @@
 
 
 ## Question 2 
-**1.	Définir l’adresse de diffusion « broadcast ».**
-    - L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. En sorte, elle envoie son signal un peu partout.
-**2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?**
+1.	Définir l’adresse de diffusion « broadcast ».**
+	- L’adresse de diffusion « broadcast » est la dernière adresse d’un sous-réseau qui permet de communiquer à tous les hôtes. En sorte, elle envoie son signal un peu partout.
+2.	Quelle est l’opération effectuée sur une adresse pour déterminer l’adresse de réseau ?**
     - Pour déterminer l’adresse réseau, on fait une opération ET Logique en binaire entre le masque et l’adresse IP.  
-**3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.**
+3.	Soit l’adresse IP 197.2.0.0. On souhaite définir 8 sous-réseaux.**
     - 197.2.0.0 : Classe C, masque 255.255.255.0/24
     - 2^<mark>3</mark> = 8 (sous réseaux)
     - Masque décimal pointé : 24 + <mark>3</mark> = 27 bits à 1 : 11111111 11111111 11111111 11100000 --> 255.255.255.<mark>224</mark>
