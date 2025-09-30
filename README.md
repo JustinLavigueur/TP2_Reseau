@@ -34,7 +34,7 @@
    - Un poste de travail dans une grande entreprise (DHCP qui évite les conflit d'adressage IP) 
 
 3. **Vrai ou Faux :** chaque hôte du réseau doit posséder une adresse IP unique.  
-   -  **Vrai**  
+   - Vrai  
 
 4. Différence entre **adresse MAC** et **adresse IP** :  
    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas.
