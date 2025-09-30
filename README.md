@@ -216,6 +216,10 @@ En `/26`
 - Nombre d’adresses par sous-réseau = `2^6 = 64`
     
     - Incrémentation de 64
+		- 192.168.10.0
+    	- 192.168.10.64
+     	- 192.168.10.128
+      	- 192.168.10.192
 
 Le sous-réseau 192.168.10.64/26 est libre
 
