@@ -3,8 +3,8 @@
 
 ## section 1
 Configurer un réseau dans Packet Tracer qui contient
-    - Un Home router
-    - Deux PC's
+- Un Home router
+- Deux PC's
     
 1.	On configure la carte réseau d'un des postes de travail pour qu’elle reçoive une adresse dynamique.
 	![Figure 1 – DHCP](img/figure1.png)
