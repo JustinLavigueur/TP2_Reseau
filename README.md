@@ -6,8 +6,8 @@
 
 ## section 1
 Configurer un réseau dans Packet Tracer qui contient
-- Un Home router
-- Deux PC's
+- <mark>Un Home router</mark>
+- <mark>Deux PC's</mark>
   
 ![Figure 1 – réseau](img/figure16.png)
     
@@ -33,10 +33,10 @@ Configurer un réseau dans Packet Tracer qui contient
 ## Question 0 
 
 1. Exemple d’hôte devant posséder une **adresse IP statique** :  
-   - Une imprimante
+   - On peut prendre exemple sur une `imprimante` puisqu'en temps normal, une imprimante est présente dans un petit réseau de 5-10 postes où il n'est pas nécessaire d'avoir l'attribution d'adresses ip dynamique.
 
 2. Exemple d’hôte devant posséder une **adresse IP dynamique** :  
-   - Un poste de travail dans une grande entreprise (DHCP qui évite les conflit d'adressage IP) 
+   - Un poste de travail dans une grande entreprise <mark>(DHCP qui évite les conflit d'adressage IP)</mark> 
 
 3. **Vrai ou Faux :** chaque hôte du réseau doit posséder une adresse IP unique.  
    - Vrai  
