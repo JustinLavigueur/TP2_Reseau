@@ -25,7 +25,7 @@ Configurer un réseau dans Packet Tracer qui contient
 ## section 2
 1.	Désactivez le service DHCP et vérifiez que vous ne recevez plus d’adresse IP.
 2.	Quelle est maintenant l’adresse IP du poste de travail ? Pourquoi ?
-   	- Adresse IP : **169.254.24.105**, car le pc ne trouve plus le server DHCP et donc une adresse APIPA lui est attribuée pour l'instant.
+   	- Adresse IP : **169.254.24.105**, car le pc ne trouve plus le serveur DHCP et donc une adresse APIPA lui est attribuée pour l'instant.
       
 ![Figure 13 – APIPA](img/Figure13.png)  
 
@@ -46,7 +46,7 @@ Configurer un réseau dans Packet Tracer qui contient
    - Une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
 
 2. Rôle du service **DHCP** :  
-   - Attribuer automatiquement des adresses IP aux appareils d’un réseau.  
+   - Le rôle du service DHCP est d'attribuer automatiquement des adresses IP aux appareils d’un réseau.  
 
 
 ## Question 1
@@ -211,7 +211,7 @@ En `/26`
 
 - Masque  : `255.255.255.192`
     
-- le dernier octet (192) est :
+- Le dernier octet (192) en binaire est :
     
     `11000000`
     
@@ -219,7 +219,7 @@ En `/26`
     
 - Nombre d’adresses par sous-réseau = `2^6 = 64`
     
-    - Incrémentation de 64
+    - Avec incrémentation de 64
 		- 192.168.10.0 (WEB)
     	- 192.168.10.64 (Libre)
      	- 192.168.10.128 (FTP)
