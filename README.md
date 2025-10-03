@@ -138,16 +138,16 @@ choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaD
 ![image 9 – ](img/image9.png)
 ---> Je l'ai ensuite release pour avoir acces au dossier téléchargé.
 ![image 10 – ](img/image10.png)  
----> J'ai réparti les fichiers du dossier pour s'assurer que GLPI retrouve ses fichiers.
+---> Je répartis les fichiers du dossier pour s'assurer que GLPI retrouve ses fichiers.
 ![image 11 – ](img/image11.png)
----> J'ai créé le fichier Downstream.php et vérifié s'il existait pour de vrai.
+---> Je crée le fichier Downstream.php et vérifié s'il existait pour de vrai.
 ![image 12 – ](img/image12.png)  
----> J<ai mis le contenu demandé dedans.
+---> Je mets le contenu demandé dedans.
 ![image 14 – ](img/image14.png)  
----> J'ai créé le fichier local_define.php.
+---> Je crée le fichier local_define.php.
 ![image 15 – ](img/image15.png)  
 ![image 16 – ](img/image16.png)  
----> J'ai configuré le serveur web.
+---> Je configure le serveur web.
 ![image 18 – ](img/image18.png)  
 ![image 19 – ](img/image19.png)  
 
@@ -162,7 +162,7 @@ choisi. Il n'est pas nécessaire d'expliquer la configuration de MySQL ou MariaD
 
 ---
 
-## 3. Subnetting et découpage
+## 2. Subnetting et découpage
 Le /24 divisé en 3 sous-réseaux :  
 
 
@@ -176,7 +176,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ---
 
-## 4. Règles de sécurité (Ingress Rules)
+## 3. Règles de sécurité (Ingress Rules)
 
 ### 🔹 Web (HTTPS)
 
@@ -202,7 +202,7 @@ Le /24 divisé en 3 sous-réseaux :
 
 ---
 
-## 5. Justification des tailles de sous-réseaux
+## 4. Justification des tailles de sous-réseaux
 
 - Pour obtenir **au moins 3 sous-réseaux**, il faut emprunter **2 bits** (`/24` à `/26`), car 2^n ≥ 3 → **n = 4**.
     
