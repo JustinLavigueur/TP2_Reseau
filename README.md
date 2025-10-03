@@ -94,13 +94,13 @@ Configurer un réseau dans Packet Tracer qui contient
 ## Question 3
 Soit l'adresse IP suivante avec sa notation CIDR : `192.168.75.50/27`.
 
-1. L'adresse réseau est **192.168.75.32/27.**
+	- ### L'adresse réseau est **192.168.75.32/27.**
    <mark>Pour le trouver, nous avons fait le calcul de la manière suivante:</mark>
 	- Tout d'abord, nous avons converti l'adresse ip 192.168.75.50/27 en binaire, ce qui donne exactement : <mark>11000000.10101000.01001011.00110010</mark>
 	- Par la suite, nous devons comprendre le masque de sous-réseau qui est 27 en décimal, donc il faut mettre les 27 bits sur 32 à 1, donc : <mark>11111111.11111111.11111111.11100000</mark> (27 bits à 1 et 5 bits à 0).
 	- Maintenant, on doit faire un ET logique entre l'adresse ip <mark>11000000.10101000.01001011.00110010</mark> et le masque de sous-réseau en binaire <mark>11111111.11111111.11111111.11100000</mark>, ce qui égale 11000000.10101000.01001011.00100000 (ce qui correspond à 192.168.75.32).
    
-2. L'adresse de diffusion est **192.168.75.63/27**
+	- ### L'adresse de diffusion est **192.168.75.63/27**
 	- <mark>Pour l'adresse de diffusion, nous allons suivre un processus similaire :</mark>
    	- Tout d'abord, nous partons de l'adresse réseau 192.168.75.32 que nous avons trouvée précédemment.
 	- En binaire, l'adresse réseau est : <mark>11000000.10101000.01001011.00100000</mark>.
@@ -109,8 +109,9 @@ Soit l'adresse IP suivante avec sa notation CIDR : `192.168.75.50/27`.
 	- En effectuant cette opération, nous obtenons : <mark>11000000.10101000.01001011.00111111</mark>.
 	- En décimal, cela correspond à **192.168.75.63/27**
    
-4. Nombre d'hôtes possibles (30) : Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
-5 bits fait 32, il y a 32 donc adresses au total, mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), `ce qui laisse 30 adresses utilisables pour les hôtes`.
+	- ### Nombre d'hôtes possibles (30) : 
+	- Avec un masque de sous-réseau de /27, il faut prendre en compte qu'il reste 5 bits (32-27 = 5) et que
+		5 bits fait 32, il y a 32 donc adresses au total, mais on doit en soustraire 2 (une pour l'adresse réseau et une pour l'adresse de diffusion), `ce qui laisse 30 adresses utilisables pour les hôtes`.
 
 ## Question 4
 
