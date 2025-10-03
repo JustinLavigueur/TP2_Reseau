@@ -4,7 +4,7 @@
 - Alexandre Sweeney-Lantin
 - Justin Lavigueur
 
-## section 1
+## DHCP : section 1
 Configurer un réseau dans Packet Tracer qui contient
 - <mark>Un Home router</mark>
 - <mark>Deux PC's</mark>
@@ -14,15 +14,15 @@ Configurer un réseau dans Packet Tracer qui contient
 1.	On configure la carte réseau d'un des postes de travail pour qu’elle reçoive une adresse dynamique.
 	![Figure 1 – DHCP](img/figure1.png)
     ![Figure 5 – DHCP](img/figure5.png)
-3.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire, on vérifie qu'on a reçu une adresse IP.
+2.	Dans une fenêtre de commandes, à l’aide de la commande nécessaire, on vérifie qu'on a reçu une adresse IP.
    ![Figure 6 – Ping](img/figure6.png)
-5.	On libére par la suite l’adresse reçue.
-6.	On redemande un bail pour vérifier si tout est en ordre.
+3.	On libére par la suite l’adresse reçue.
+4.	On redemande un bail pour vérifier si tout est en ordre.
    
 ![Figure 7 – release/renew](img/figure7.png)
 
 
-## section 2
+## DHCP : section 2
 1.	Désactivez le service DHCP et vérifiez que vous ne recevez plus d’adresse IP.
 2.	Quelle est maintenant l’adresse IP du poste de travail ? Pourquoi ?
    	- Adresse IP : **169.254.24.105**, car le pc ne trouve plus le serveur DHCP et donc une adresse APIPA lui est attribuée pour l'instant.
@@ -36,16 +36,16 @@ Configurer un réseau dans Packet Tracer qui contient
    - On peut prendre exemple sur une `imprimante` puisqu'en temps normal, une imprimante est présente dans un petit réseau de 5-10 postes où il n'est pas nécessaire d'avoir l'attribution d'adresses ip dynamique.
 
 2. Exemple d’hôte devant posséder une **adresse IP dynamique** :  
-   - Un poste de travail dans une grande entreprise <mark>(DHCP qui évite les conflit d'adressage IP)</mark> 
+   - Un poste de travail dans une grande entreprise <mark>(DHCP qui permet d'éviter les conflits d'adressage IP)</mark> 
 
 3. **Vrai ou Faux :** chaque hôte du réseau doit posséder une adresse IP unique.  
    - Vrai  
 
 4. Différence entre **adresse MAC** et **adresse IP** :  
    - Une adresse MAC est l’adresse physique de la carte réseau d’un appareil. En fait, chaque appareil a sa propre adresse MAC unique et ne change pas.
-   - Une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau, contrairement à une adresse MAC. L’adresse IP peut changer selon le réseau. 
+   - Une adresse IP est une adresse attribuée à un appareil lorsqu’il est connecté à un réseau. L’adresse IP peut changer selon le réseau dans lequel ce dernier est. 
 
-2. Rôle du service **DHCP** :  
+5. Rôle du service **DHCP** :  
    - Le rôle du service DHCP est d'attribuer automatiquement des adresses IP aux appareils d’un réseau.  
 
 
@@ -53,8 +53,8 @@ Configurer un réseau dans Packet Tracer qui contient
 **Pour les adresses suivantes indiquez:**
 
 1. Leur classe;
-2. la partie réseau et la partie hôte;
-3. si ce sont des adresses privées ou publiques.
+2. La partie réseau et la partie hôte;
+3. Si ce sont des adresses privées ou publiques.
 
 | Adresse IP      | Classe | Partie réseau | Partie hôte | Privée/Publique |
 |-----------------|--------|---------------|-------------|-----------------|
