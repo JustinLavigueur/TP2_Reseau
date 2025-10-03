@@ -95,7 +95,7 @@ Configurer un réseau dans Packet Tracer qui contient
 Soit l'adresse IP suivante avec sa notation CIDR : `192.168.75.50/27`.
 
 1. L'adresse réseau est **192.168.75.32/27.**
-   <mark>Pour le trouver, nous avons fait le calcul de la manière suivante:</mark>
+   	- <mark>Pour le trouver, nous avons fait le calcul de la manière suivante:</mark>
 	- Tout d'abord, nous avons converti l'adresse ip 192.168.75.50/27 en binaire, ce qui donne exactement : <mark>11000000.10101000.01001011.00110010</mark>
 	- Par la suite, nous devons comprendre le masque de sous-réseau qui est 27 en décimal, donc il faut mettre les 27 bits sur 32 à 1, donc : <mark>11111111.11111111.11111111.11100000</mark> (27 bits à 1 et 5 bits à 0).
 	- Maintenant, on doit faire un ET logique entre l'adresse ip <mark>11000000.10101000.01001011.00110010</mark> et le masque de sous-réseau en binaire <mark>11111111.11111111.11111111.11100000</mark>, ce qui égale 11000000.10101000.01001011.00100000 (ce qui correspond à 192.168.75.32).
